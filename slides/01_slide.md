@@ -167,7 +167,8 @@ pull a few methods out
 <!SLIDE>
 # page object metaphor #
 ![seq diagram rhevm](page_sequence.png) 
-* for tasks, what are the implications for composition over inheritance
+
+for tasks, what are the implications for composition over inheritance
 
 <!SLIDE smaller >
 	@@@ java
