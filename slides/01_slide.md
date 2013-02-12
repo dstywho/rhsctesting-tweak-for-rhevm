@@ -1,6 +1,9 @@
 !SLIDE 
 # Tweaking for Rhevm #
 
+<script src="http://js.pusherapp.com/1.9/pusher.min.js"></script>
+<script src="/javascripts/pusher.js"></script>
+
 !SLIDE bullets incremental
 # goals #
 * discuss possible implementation options and tradeoffs
@@ -164,7 +167,7 @@ pull a few methods out
 	}
 
 
-<!SLIDE>
+<!SLIDE center>
 # page object metaphor #
 ![seq diagram rhevm](page_sequence.png) 
 
