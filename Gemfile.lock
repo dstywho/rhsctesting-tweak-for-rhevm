@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/bgentry/showoff-pusher.git
+  revision: f2f81aaae9845a3a748c2211ed66a96e2b74160c
+  specs:
+    showoff-pusher (0.0.1)
+      pusher (~> 0.8.3)
+      showoff (~> 0.7.0)
+
+GIT
   remote: git://github.com/schacon/showoff.git
   revision: 1eae5791f04c5f58b6821b9e17aef0dcb20ebdb3
   specs:
@@ -46,9 +54,6 @@ GEM
       mime-types (>= 1.16)
     ruby-hmac (0.4.0)
     rubyzip (0.9.9)
-    showoff-pusher (0.0.1)
-      pusher (~> 0.8.3)
-      showoff (~> 0.7.0)
     signature (0.1.6)
     sinatra (1.3.4)
       rack (~> 1.4)
@@ -62,4 +67,4 @@ PLATFORMS
 DEPENDENCIES
   heroku
   showoff!
-  showoff-pusher
+  showoff-pusher!
