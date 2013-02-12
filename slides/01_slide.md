@@ -164,37 +164,6 @@ pull a few methods out
 	}
 
 
-
-
-
-<!SLIDE smaller>
-# page object #
-	@@@ java
-	  @Override
-	  public boolean createNewCluster(ClusterMap cluster){
-	    page.navigateTo();
-	  
-	    
-	    if(cluster.isPositive() && page.isClusterExist(cluster)) {
-	      failTest("Cluster ["+cluster.getClusterName()+"] is already on the list!");
-	    } else if(!cluster.isPositive() && !page.isClusterExist(cluster)){
-	      failTest("Pre-Requirement not met: Cluster ["+cluster.getClusterName()+"] not available on the available list!");
-	    }
-	    
-	    page.getNewButton().click();
-	    page.getCreateModal().fillInFields(cluster);
-	    page.getCreateModal().getCreateButton().click();
-	    
-	    if (cluster.isPositive()) {
-	      page.getGuideMeModal().getCancelButton().click();                                                                                                                                                                                      
-	      validateExistenceOfNewCluster(cluster);
-	    } else {
-	        validatePresenceOfErrorMessage(cluster);
-	    }   
-	    return true;
-	  }
-
-
 <!SLIDE>
 # page object metaphor #
 ![seq diagram rhevm](page_sequence.png) 
